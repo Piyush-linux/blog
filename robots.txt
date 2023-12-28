@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Piyush-linux.github.io/blog/sitemap.xml

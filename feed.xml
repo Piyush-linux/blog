@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>devshakti</title>
+    <link href="https://Piyush-linux.github.io/blog/feed.xml" rel="self" />
+    <link href="https://Piyush-linux.github.io/blog" />
+    <updated>2023-12-28T12:51:26+05:30</updated>
+    <author>
+        <name>Piyush</name>
+    </author>
+    <id>https://Piyush-linux.github.io/blog</id>
+
+    <entry>
+        <title>11 Fish Shell Features That Make it More Awesome Than Bash</title>
+        <author>
+            <name>Piyush</name>
+        </author>
+        <link href="https://Piyush-linux.github.io/blog/11-fish-shell-features-that-make-it-more-awesome-than-bash.html"/>
+        <id>https://Piyush-linux.github.io/blog/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</id>
+        <media:content url="https://Piyush-linux.github.io/blog/media/posts/3/matric.jpg" medium="image" />
+            <category term="linux"/>
+
+        <updated>2023-12-28T12:51:26+05:30</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://Piyush-linux.github.io/blog/media/posts/3/matric.jpg" alt="matrix" />
+                    Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://Piyush-linux.github.io/blog/media/posts/3/matric.jpg" class="type:primaryImage" alt="matrix" /></p>
+                
+  <p>
+    Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.
+  </p>
+
+  <p>
+    I am not exaggerating. Fish indeed is an overlooked shell that could be a great fit for beginners and advanced FOSSers alike.
+  </p>
+
+  <p>
+    Fish provides a range of features that makes it an attractive choice. From syntax highlight to abbreviation (my favorite), there are numerous novelties here.
+  </p>
+
+  <p>
+    Let me share some of my favorite Fish shell features with you.
+  </p>
+
+    <h2 id="1-syntax-highlighting">
+      1. Syntax highlighting
+    </h2>
+
+  <ul>
+    <li>It is better to spot errors before they get executed. This saves a lot of time, energy and frustration.<br></li><li>Most modern code editors have the syntax highlighting built-in. Fish has this functionality built into the shell itself and it works on Linux commands.<br></li><li>Incorrect commands? You see it highlighted in red. The same goes for arguments and options that do not match with the context.<br></li>
+  </ul>
+
+  <p>
+    <br><br>
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Social Media Template using html, css, javascript</title>
+        <author>
+            <name>Piyush</name>
+        </author>
+        <link href="https://Piyush-linux.github.io/blog/social-media-template-using-html-css-javascript.html"/>
+        <id>https://Piyush-linux.github.io/blog/social-media-template-using-html-css-javascript.html</id>
+        <media:content url="https://Piyush-linux.github.io/blog/media/posts/2/css.jpg" medium="image" />
+            <category term="Web"/>
+
+        <updated>2023-12-28T12:35:08+05:30</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://Piyush-linux.github.io/blog/media/posts/2/css.jpg" alt="css" />
+                    Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://Piyush-linux.github.io/blog/media/posts/2/css.jpg" class="type:primaryImage" alt="css" /></p>
+                
+  <p>
+    Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this article then please share this article with your friends and colleagues. If you have any questions or suggestions regarding this article then please comment down below.
+  </p>
+<pre class="line-numbers  language-html"><code>echo "Hello"</code></pre>
+
+  <p>
+    Source Code : https://freecodez.com/post/ptzt236
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Learn HTML</title>
+        <author>
+            <name>Piyush</name>
+        </author>
+        <link href="https://Piyush-linux.github.io/blog/learn-html.html"/>
+        <id>https://Piyush-linux.github.io/blog/learn-html.html</id>
+        <media:content url="https://Piyush-linux.github.io/blog/media/posts/1/htmll-2.jpg" medium="image" />
+            <category term="Web"/>
+
+        <updated>2023-12-28T12:18:45+05:30</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://Piyush-linux.github.io/blog/media/posts/1/htmll-2.jpg" alt="html code" />
+                    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://Piyush-linux.github.io/blog/media/posts/1/htmll-2.jpg" class="type:primaryImage" alt="html code" /></p>
+                
+  <p>
+    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
+  </p>
+
+  <p>
+    . It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript
+  </p>
+
+  <ul>
+    <li>DIV</li><li>A</li><li>HTML</li><li>BODY</li><li>HEAD</li>
+  </ul>
+
+    <figure class="blockquote">
+      <blockquote>No Hypor Be Hyper</blockquote>
+      <figcaption>krista</figcaption>
+    </figure>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+</feed>
