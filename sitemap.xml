@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://Piyush-linux.github.io/blog/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://devshakti.tech/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://Piyush-linux.github.io/blog/</loc>
+<loc>https://devshakti.tech/</loc>
 </url>
 <url>
-<loc>https://Piyush-linux.github.io/blog/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</loc>
+<loc>https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</loc>
 <lastmod>2023-12-28T12:51:26+05:30</lastmod>
 <image:image>
-<image:loc>https://Piyush-linux.github.io/blog/media/posts/3/matric.jpg</image:loc>
+<image:loc>https://devshakti.tech/media/posts/3/matric.jpg</image:loc>
 <image:title><![CDATA[matrix]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://Piyush-linux.github.io/blog/contact-us.html</loc>
+<loc>https://devshakti.tech/contact-us.html</loc>
 <lastmod>2023-12-28T12:55:36+05:30</lastmod>
 <image:image>
-<image:loc>https://Piyush-linux.github.io/blog/media/posts/4/contatc-2.jpg</image:loc>
+<image:loc>https://devshakti.tech/media/posts/4/contatc-2.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://Piyush-linux.github.io/blog/learn-html.html</loc>
+<loc>https://devshakti.tech/learn-html.html</loc>
 <lastmod>2023-12-28T12:18:45+05:30</lastmod>
 <image:image>
-<image:loc>https://Piyush-linux.github.io/blog/media/posts/1/htmll-2.jpg</image:loc>
+<image:loc>https://devshakti.tech/media/posts/1/htmll-2.jpg</image:loc>
 <image:title><![CDATA[html code]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://Piyush-linux.github.io/blog/social-media-template-using-html-css-javascript.html</loc>
+<loc>https://devshakti.tech/social-media-template-using-html-css-javascript.html</loc>
 <lastmod>2023-12-28T12:35:08+05:30</lastmod>
 <image:image>
-<image:loc>https://Piyush-linux.github.io/blog/media/posts/2/css.jpg</image:loc>
+<image:loc>https://devshakti.tech/media/posts/2/css.jpg</image:loc>
 <image:title><![CDATA[css]]></image:title>
 </image:image>
 </url>

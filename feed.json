@@ -2,21 +2,21 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "devshakti",
     "description": "",
-    "home_page_url": "https://Piyush-linux.github.io/blog",
-    "feed_url": "https://Piyush-linux.github.io/blog/feed.json",
+    "home_page_url": "https://devshakti.tech",
+    "feed_url": "https://devshakti.tech/feed.json",
     "user_comment": "",
-    "icon": "https://Piyush-linux.github.io/blog/media/website/Devshakti.png",
+    "icon": "https://devshakti.tech/media/website/Devshakti.png",
     "author": {
         "name": "Piyush"
     },
     "items": [
         {
-            "id": "https://Piyush-linux.github.io/blog/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
-            "url": "https://Piyush-linux.github.io/blog/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
+            "id": "https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
+            "url": "https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
             "title": "11 Fish Shell Features That Make it More Awesome Than Bash",
             "summary": "Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.",
             "content_html": "\n  <p>\n    Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.\n  </p>\n\n  <p>\n    I am not exaggerating. Fish indeed is an overlooked shell that could be a great fit for beginners and advanced FOSSers alike.\n  </p>\n\n  <p>\n    Fish provides a range of features that makes it an attractive choice. From syntax highlight to abbreviation (my favorite), there are numerous novelties here.\n  </p>\n\n  <p>\n    Let me share some of my favorite Fish shell features with you.\n  </p>\n\n    <h2 id=\"1-syntax-highlighting\">\n      1. Syntax highlighting\n    </h2>\n\n  <ul>\n    <li>It is better to spot errors before they get executed. This saves a lot of time, energy and frustration.<br></li><li>Most modern code editors have the syntax highlighting built-in. Fish has this functionality built into the shell itself and it works on Linux commands.<br></li><li>Incorrect commands? You see it highlighted in red. The same goes for arguments and options that do not match with the context.<br></li>\n  </ul>\n\n  <p>\n    <br><br>\n  </p>",
-            "image": "https://Piyush-linux.github.io/blog/media/posts/3/matric.jpg",
+            "image": "https://devshakti.tech/media/posts/3/matric.jpg",
             "author": {
                 "name": "Piyush"
             },
@@ -27,12 +27,12 @@
             "date_modified": "2023-12-28T12:51:26+05:30"
         },
         {
-            "id": "https://Piyush-linux.github.io/blog/social-media-template-using-html-css-javascript.html",
-            "url": "https://Piyush-linux.github.io/blog/social-media-template-using-html-css-javascript.html",
+            "id": "https://devshakti.tech/social-media-template-using-html-css-javascript.html",
+            "url": "https://devshakti.tech/social-media-template-using-html-css-javascript.html",
             "title": "Social Media Template using html, css, javascript",
             "summary": "Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this&hellip;",
             "content_html": "\n  <p>\n    Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this article then please share this article with your friends and colleagues. If you have any questions or suggestions regarding this article then please comment down below.\n  </p>\n<pre class=\"line-numbers  language-html\"><code>echo \"Hello\"</code></pre>\n\n  <p>\n    Source Code : https://freecodez.com/post/ptzt236\n  </p>",
-            "image": "https://Piyush-linux.github.io/blog/media/posts/2/css.jpg",
+            "image": "https://devshakti.tech/media/posts/2/css.jpg",
             "author": {
                 "name": "Piyush"
             },
@@ -43,12 +43,12 @@
             "date_modified": "2023-12-28T12:35:08+05:30"
         },
         {
-            "id": "https://Piyush-linux.github.io/blog/learn-html.html",
-            "url": "https://Piyush-linux.github.io/blog/learn-html.html",
+            "id": "https://devshakti.tech/learn-html.html",
+            "url": "https://devshakti.tech/learn-html.html",
             "title": "Learn HTML",
             "summary": "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web&hellip;",
             "content_html": "\n  <p>\n    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.\n  </p>\n\n  <p>\n    . It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript\n  </p>\n\n  <ul>\n    <li>DIV</li><li>A</li><li>HTML</li><li>BODY</li><li>HEAD</li>\n  </ul>\n\n    <figure class=\"blockquote\">\n      <blockquote>No Hypor Be Hyper</blockquote>\n      <figcaption>krista</figcaption>\n    </figure>\n\n  <p>\n    \n  </p>",
-            "image": "https://Piyush-linux.github.io/blog/media/posts/1/htmll-2.jpg",
+            "image": "https://devshakti.tech/media/posts/1/htmll-2.jpg",
             "author": {
                 "name": "Piyush"
             },
