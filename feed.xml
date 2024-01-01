@@ -3,12 +3,125 @@
     <title>devshakti</title>
     <link href="https://devshakti.tech/feed.xml" rel="self" />
     <link href="https://devshakti.tech" />
-    <updated>2023-12-28T12:51:26+05:30</updated>
+    <updated>2024-01-01T17:08:16+05:30</updated>
     <author>
         <name>Piyush</name>
     </author>
     <id>https://devshakti.tech</id>
 
+    <entry>
+        <title>Digital Ocean Setup for Web Server</title>
+        <author>
+            <name>Piyush</name>
+        </author>
+        <link href="https://devshakti.tech/digital-ocean-setup-for-web-server.html"/>
+        <id>https://devshakti.tech/digital-ocean-setup-for-web-server.html</id>
+
+        <updated>2024-01-01T17:08:16+05:30</updated>
+            <summary>
+                <![CDATA[
+                    1. Access vie SSH 2. Create non-root User 3.&nbsp; # Local system ssh-keygen -t rsa : Don't overwrite if already&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    1. Access vie SSH<br>2. Create non-root User<br>3.&nbsp;
+  </p>
+
+  <p>
+    
+  </p>
+<hr class="separator separator--long-line" />
+
+    <h2 id="create-droplet">
+      Create Droplet
+    </h2>
+
+  <ul>
+    <li>Select Region Closer to your</li><li>Select SSH<br></li>
+  </ul>
+
+    <h2 id="access-via-ssh">
+      Access via SSH
+    </h2>
+<pre class="line-numbers  language-html"><code># Local system
+ssh-keygen -t rsa
+: Don't overwrite if already exist
+cat ~/.ssh/id_rsa.pub
+# Copy and Paste the Default key into DO_Droplet
+
+# If used another file
+chmod 600 &lt;private&gt;
+ssh-add &lt;private&gt;</code></pre>
+
+    <h2 id="create-non-root-user">
+      Create Non-Root User
+    </h2>
+<pre class="line-numbers  language-html"><code>adduser piyush
+usermod -aG sudo piyush
+sudo su - piyush
+su piyush
+ufw allow OpenSSH
+ufw enable
+</code></pre>
+<pre class="line-numbers  language-html"><code># Local Machine    
+ssh-keygen
+eval `ssh-agent -s`
+ssh-add ~/.ssh/digitalOcean
+
+# Server
+su - user
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys # paste SSh from 
+chmod 700 ~/.ssh/authorized_keys
+
+# Local Machine
+eval `ssh-agent -s`
+ssh-add ~/.ssh/digitalOcean    
+ssh user@&lt;IP&gt;
+</code></pre>
+
+    <h2 id="nginx">
+      Nginx
+    </h2>
+<pre class="line-numbers  language-html"><code>sudo apt-get update
+sudo apt install nginx
+sudo ufw allow http https
+
+cd /var/www/html
+sudo nano index.html
+
+# Configs
+cd /etc/nginx/sites-available
+sudo nano default
+
+# test nginx
+sudo nginx -t
+
+sudo systemctl restart nginx.service || service nginx restart
+systemctl status nginx
+
+sudo systemctl enable nginx
+
+# Nginx Setup for domain</code></pre>
+
+    <h2 id="domainandnbsp">
+      Domain&nbsp;
+    </h2>
+
+  <ul>
+    <li>migrate Original_Domain_handeling to DO_domain_handeling</li><li>By using DO_NameServer into Origin_Domain_NS</li><li>Hostinger Name Server :&nbsp;<br>Two From Hostinger<br>Two From Digital Ocean</li><li>Record A to &lt;IP&gt; / Droplet</li><li><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: 1em; font-weight: var(--font-weight-normal);">Nginx&nbsp;</span><br></li>
+  </ul>
+
+  <p>
+    https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>11 Fish Shell Features That Make it More Awesome Than Bash</title>
         <author>
