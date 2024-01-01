@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>devshakti</title>
-    <link href="https://devshakti.tech/feed.xml" rel="self" />
-    <link href="https://devshakti.tech" />
+    <link href="https://seashell-app-otzyy.ondigitalocean.app/feed.xml" rel="self" />
+    <link href="https://seashell-app-otzyy.ondigitalocean.app" />
     <updated>2024-01-01T17:08:16+05:30</updated>
     <author>
         <name>Piyush</name>
     </author>
-    <id>https://devshakti.tech</id>
+    <id>https://seashell-app-otzyy.ondigitalocean.app</id>
 
     <entry>
         <title>Digital Ocean Setup for Web Server</title>
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://devshakti.tech/digital-ocean-setup-for-web-server.html"/>
-        <id>https://devshakti.tech/digital-ocean-setup-for-web-server.html</id>
+        <link href="https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html"/>
+        <id>https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html</id>
 
         <updated>2024-01-01T17:08:16+05:30</updated>
             <summary>
@@ -127,21 +127,21 @@ sudo systemctl enable nginx
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html"/>
-        <id>https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</id>
-        <media:content url="https://devshakti.tech/media/posts/3/matric.jpg" medium="image" />
+        <link href="https://seashell-app-otzyy.ondigitalocean.app/11-fish-shell-features-that-make-it-more-awesome-than-bash.html"/>
+        <id>https://seashell-app-otzyy.ondigitalocean.app/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</id>
+        <media:content url="https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg" medium="image" />
             <category term="linux"/>
 
         <updated>2023-12-28T12:51:26+05:30</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://devshakti.tech/media/posts/3/matric.jpg" alt="matrix" />
+                        <img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg" alt="matrix" />
                     Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://devshakti.tech/media/posts/3/matric.jpg" class="type:primaryImage" alt="matrix" /></p>
+                    <p><img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg" class="type:primaryImage" alt="matrix" /></p>
                 
   <p>
     Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.
@@ -178,21 +178,21 @@ sudo systemctl enable nginx
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://devshakti.tech/social-media-template-using-html-css-javascript.html"/>
-        <id>https://devshakti.tech/social-media-template-using-html-css-javascript.html</id>
-        <media:content url="https://devshakti.tech/media/posts/2/css.jpg" medium="image" />
+        <link href="https://seashell-app-otzyy.ondigitalocean.app/social-media-template-using-html-css-javascript.html"/>
+        <id>https://seashell-app-otzyy.ondigitalocean.app/social-media-template-using-html-css-javascript.html</id>
+        <media:content url="https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg" medium="image" />
             <category term="Web"/>
 
         <updated>2023-12-28T12:35:08+05:30</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://devshakti.tech/media/posts/2/css.jpg" alt="css" />
+                        <img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg" alt="css" />
                     Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://devshakti.tech/media/posts/2/css.jpg" class="type:primaryImage" alt="css" /></p>
+                    <p><img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg" class="type:primaryImage" alt="css" /></p>
                 
   <p>
     Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this article then please share this article with your friends and colleagues. If you have any questions or suggestions regarding this article then please comment down below.
@@ -210,21 +210,21 @@ sudo systemctl enable nginx
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://devshakti.tech/learn-html.html"/>
-        <id>https://devshakti.tech/learn-html.html</id>
-        <media:content url="https://devshakti.tech/media/posts/1/htmll-2.jpg" medium="image" />
+        <link href="https://seashell-app-otzyy.ondigitalocean.app/learn-html.html"/>
+        <id>https://seashell-app-otzyy.ondigitalocean.app/learn-html.html</id>
+        <media:content url="https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg" medium="image" />
             <category term="Web"/>
 
         <updated>2023-12-28T12:18:45+05:30</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://devshakti.tech/media/posts/1/htmll-2.jpg" alt="html code" />
+                        <img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg" alt="html code" />
                     The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://devshakti.tech/media/posts/1/htmll-2.jpg" class="type:primaryImage" alt="html code" /></p>
+                    <p><img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg" class="type:primaryImage" alt="html code" /></p>
                 
   <p>
     The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
