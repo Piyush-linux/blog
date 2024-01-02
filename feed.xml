@@ -3,7 +3,7 @@
     <title>devshakti</title>
     <link href="https://seashell-app-otzyy.ondigitalocean.app/feed.xml" rel="self" />
     <link href="https://seashell-app-otzyy.ondigitalocean.app" />
-    <updated>2024-01-02T14:21:58+05:30</updated>
+    <updated>2024-01-02T15:34:57+05:30</updated>
     <author>
         <name>Piyush</name>
     </author>
@@ -17,30 +17,26 @@
         <link href="https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html"/>
         <id>https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html</id>
 
-        <updated>2024-01-02T14:21:58+05:30</updated>
+        <updated>2024-01-02T15:34:57+05:30</updated>
             <summary>
                 <![CDATA[
-                    1. Access vie SSH 2. Create non-root User 3.&nbsp; # Local system ssh-keygen -t rsa : Don't overwrite if already&hellip;
+                    1. Access vie SSH 2. Create Non-Root User 3. D.N.S Routing 4.&nbsp;Setup Nginx &amp; Config &amp; Routing 5. Setup Node&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 
   <p>
-    1. Access vie SSH<br>2. Create non-root User<br>3.&nbsp;
-  </p>
-
-  <p>
-    
+    1. Access vie SSH<br>2. Create Non-Root User<br>3. D.N.S Routing<br>4.&nbsp;Setup Nginx &amp; Config &amp; Routing<br>5. Setup Node for Sub-Domain &amp; Domain for Static Website&nbsp;<br>6. Certbot Encryption<br>
   </p>
 <hr class="separator separator--long-line" />
 
-    <h2 id="create-droplet">
-      Create Droplet
+    <h2 id="create-dropletandnbsp">
+      Create Droplet&nbsp;
     </h2>
 
   <ul>
-    <li>Select Region Closer to your</li><li>Select SSH<br></li>
+    <li><b>Select Region Closer To Your</b></li><li><b>Select SSH</b><br></li>
   </ul>
 
     <h2 id="access-via-ssh">
@@ -49,8 +45,9 @@
 <pre class="line-numbers  language-html"><code># Local system
 ssh-keygen -t rsa
 : Don't overwrite if already exist
-cat ~/.ssh/id_rsa.pub
 # Copy and Paste the Default key into DO_Droplet
+cat ~/.ssh/id_rsa.pub
+
 
 # If used another file
 chmod 600 &lt;private&gt;
@@ -66,6 +63,10 @@ su piyush
 ufw allow OpenSSH
 ufw enable
 </code></pre>
+
+    <h2 id="ssh-userandnbsp">
+      SSH User&nbsp;
+    </h2>
 <pre class="line-numbers  language-html"><code># Local Machine    
 ssh-keygen
 eval `ssh-agent -s`
@@ -174,10 +175,6 @@ server {
         proxy_redirect off;
     }
 }</code></pre>
-
-  <p>
-    
-  </p>
 
   <p>
     https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/
