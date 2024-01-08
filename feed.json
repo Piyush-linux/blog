@@ -2,35 +2,62 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "devshakti",
     "description": "",
-    "home_page_url": "https://seashell-app-otzyy.ondigitalocean.app",
-    "feed_url": "https://seashell-app-otzyy.ondigitalocean.app/feed.json",
+    "home_page_url": "https://devshakti.tech",
+    "feed_url": "https://devshakti.tech/feed.json",
     "user_comment": "",
-    "icon": "https://seashell-app-otzyy.ondigitalocean.app/media/website/Devshakti.png",
+    "icon": "https://devshakti.tech/media/website/Devshakti.png",
     "author": {
         "name": "Piyush"
     },
     "items": [
         {
-            "id": "https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html",
-            "url": "https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html",
+            "id": "https://devshakti.tech/nuxt-backend.html",
+            "url": "https://devshakti.tech/nuxt-backend.html",
+            "title": "Nuxt backend",
+            "content_html": "\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "Piyush"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-01-05T13:37:05+05:30",
+            "date_modified": "2024-01-05T13:37:05+05:30"
+        },
+        {
+            "id": "https://devshakti.tech/strapi.html",
+            "url": "https://devshakti.tech/strapi.html",
+            "title": "Strapi",
+            "summary": "# Local Setup Strapi run dev Setup postgres-DB on System- DB Setup /config/database.js ```js module.exports = ({ env }) =&gt;&hellip;",
+            "content_html": "\n    <h2 id=\"local-setuplessbrgreater\">\n      # Local Setup<br>\n    </h2>\n\n  <ul>\n    <li>Strapi run dev </li><li>Setup postgres-DB on System</li><li>- DB Setup /config/database.js</li>\n  </ul>\n<pre class=\"line-numbers  language-javascript\"><code>```js\n  module.exports = ({ env }) =&gt; ({\n      connection: {\n        client: 'postgres',\n        connection: {\n          host: env('DATABASE_HOST'),\n          port: env.int('DATABASE_PORT'),\n          database: env('DATABASE_NAME'),\n          user: env('DATABASE_USERNAME'),\n          password: env('DATABASE_PASSWORD'),\n          schema: env('DATABASE_SCHEMA'), // Not required\n          ssl: {\n            rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),\n          },\n        },\n        debug: false,\n      },\n    });\n```\n</code></pre>\n\n  <ul>\n    <li>Then Develop acc to your need<br></li>\n  </ul>\n\n    <h2 id=\"before-deployment-to-dolessbrgreater\">\n      ## Before Deployment to DO<br>\n    </h2>\n\n  <ul>\n    <li>Build and test locally : <code>npm run start</code></li><li>Backup Your Data before Deployment</li><li>Test Connection to DO-DB from Local Strapi App</li>\n  </ul>\n\n    <h2 id=\"db-setup-on-dolessbrgreater\">\n      # DB setup on DO<br>\n    </h2>\n\n  <ul>\n    <li>Create DB cluster</li><li>Select postgres</li><li>Source : My_PC &amp; MY_Droplet</li><li>Get Credentials<br></li>\n  </ul>\n\n    <h2 id=\"save-envlessbrgreater\">\n      # Save ENV<br>\n    </h2>\n<pre class=\"line-numbers  language-yaml\"><code>```env\nHOST=\nPORT=\nAPP_KEYS=\nAPI_TOKEN_SALT=\nADMIN_JWT_SECRET=\nTRANSFER_TOKEN_SALT=\n\nDATABASE_HOST=\nDATABASE_PORT=\nDATABASE_NAME=\nDATABASE_USERNAME=\nDATABASE_PASSWORD=\nDATABASE_SCHEMA=\nJWT_SECRET=\n```\n</code></pre>\n\n    <h2 id=\"deployment-to-dolessbrgreaterlessbrgreater\">\n      # Deployment to DO<br><br>\n    </h2>\n\n  <ol>\n    <li>Git clone Strapi Repo # public only for clonning : - <code>npm install</code></li><li>Create ENV file on server : <code>touch .env</code></li><li>Build on Server : </li><li>Connect to DO-DB </li><li>Firewall</li><li>```</li><li>sudo ufw allow 1337 # Allow to test Connection</li><li>sudo allow 25060 # Allow DO-DB</li><li>```&nbsp;</li><li>Power Cycle : Hard Reset in caes of any error</li>\n  </ol>\n\n    <h2 id=\"dnslessbrgreaterlessbrgreater\">\n      # DNS<br><br>\n    </h2>\n\n  <ul>\n    <li>app.domain.com -&gt; IP:80 ( proxy pass to :1337 )&nbsp;</li><li>`<code>sudo ufw deny 1337</code>`</li><li>Edit Server : <code>/etc/nginx/sites-available&nbsp;</code></li>\n  </ul>\n\n    <h2 id=\"pm2\">\n      PM2\n    </h2>\n<pre class=\"line-numbers  language-yaml\"><code>npm i pm2 -g\ntouch strapi.sh\n    | npm start --prefix /home/&lt;USER&gt;/rusa/rusa-strapi\n    | \npm2 start pm2.sh\npm2 restart pm2.sh\npm2 stop pm2.sh\n</code></pre>",
+            "author": {
+                "name": "Piyush"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-01-05T12:09:05+05:30",
+            "date_modified": "2024-01-05T12:56:18+05:30"
+        },
+        {
+            "id": "https://devshakti.tech/digital-ocean-setup-for-web-server.html",
+            "url": "https://devshakti.tech/digital-ocean-setup-for-web-server.html",
             "title": "Digital Ocean Setup for Web Server",
             "summary": "1. Access vie SSH 2. Create Non-Root User 3. D.N.S Routing 4.&nbsp;Setup Nginx &amp; Config &amp; Routing 5. Setup Node&hellip;",
-            "content_html": "\n  <p>\n    1. Access vie SSH<br>2. Create Non-Root User<br>3. D.N.S Routing<br>4.&nbsp;Setup Nginx &amp; Config &amp; Routing<br>5. Setup Node for Sub-Domain &amp; Domain for Static Website&nbsp;<br>6. Certbot Encryption<br>\n  </p>\n<hr class=\"separator separator--long-line\" />\n\n    <h2 id=\"create-dropletandnbsp\">\n      Create Droplet&nbsp;\n    </h2>\n\n  <ul>\n    <li><b>Select Region Closer To Your</b></li><li><b>Select SSH</b><br></li>\n  </ul>\n\n    <h2 id=\"access-via-ssh\">\n      Access via SSH\n    </h2>\n<pre class=\"line-numbers  language-html\"><code># Local system\nssh-keygen -t rsa\n: Don't overwrite if already exist\n# Copy and Paste the Default key into DO_Droplet\ncat ~/.ssh/id_rsa.pub\n\n\n# If used another file\nchmod 600 &lt;private&gt;\nssh-add &lt;private&gt;</code></pre>\n\n    <h2 id=\"create-non-root-user\">\n      Create Non-Root User\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>adduser piyush\nusermod -aG sudo piyush\nsudo su - piyush\nsu piyush\nufw allow OpenSSH\nufw enable\n</code></pre>\n\n    <h2 id=\"ssh-userandnbsp\">\n      SSH User&nbsp;\n    </h2>\n<pre class=\"line-numbers  language-html\"><code># Local Machine    \nssh-keygen\neval `ssh-agent -s`\nssh-add ~/.ssh/digitalOcean\n\n# Server\nsu - user\nmkdir ~/.ssh\nchmod 700 ~/.ssh\nnano ~/.ssh/authorized_keys # paste SSh from \nchmod 700 ~/.ssh/authorized_keys\n\n# Local Machine\neval `ssh-agent -s`\nssh-add ~/.ssh/digitalOcean    \nssh user@&lt;IP&gt;\n</code></pre>\n\n    <h2 id=\"nginx-andamp-firewall\">\n      Nginx &amp; Firewall\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>sudo apt-get update\nsudo apt install nginx\n\nsudo ufw allow http https\nsudo ufw allow 'Nginx Full'\nsudo ufw delete allow 'Nginx HTTP'\n\ncd /var/www/html\nsudo nano index.html\n\n# Configs\ncd /etc/nginx/sites-available\nsudo nano default\n\n# test nginx\nsudo nginx -t\n\nsudo systemctl restart nginx.service || service nginx restart\nsystemctl status nginx\n\nsudo systemctl enable nginx\n\n# Nginx Setup for domain</code></pre>\n\n    <h2 id=\"domainandnbsp\">\n      Domain&nbsp;\n    </h2>\n\n  <ul>\n    <li><b>Name Server</b> : migrate Original Domain handeling to DO_domain_handeling</li><li><b>RECORD : </b>By A domain to IP , A www to IP</li>\n  </ul>\n<pre class=\"line-numbers  language-html\"><code>nginx_config : /etc/nginx/sites-enable/default ;\n\troot /var/www/devshakti.tech/html ;\n\tserver_name devshakti.tech devshakti.tech ;\n\tindex index.html\n\tinclude /etc/nginx/conf.d/*.conf ;\n\tinclude /etc/nginx/sites-enabled/* ;</code></pre>\n<pre class=\"line-numbers  language-html\"><code>sudo mkdir -p /var/www/devshakti.tech/html\nsudo chown -R $USER:$USER /var/www/devshakti.tech/html\nsudo chown -R 755 /var/www/devshakti.tech\ntouch /var/www/devshakti.tech/html/index.html\n\nsudo ln -s /etc/nginx/sites-enabled/devshakti.tech /etc/nginx/sites-enabled/\nsudo nginx -s reload\n</code></pre>\n\n    <h2 id=\"ssl-lets-encrypt\">\n      SSL : Lets Encrypt\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>sudo snap install core; sudo snap refresh core\nsudo snap install --classic certbot\nsudo ln -s /snap/bin/certbot /usr/bin/certbot\nsudo certbot --version\n\n# Repeat For every Domain and Subdomain\nsudo certbot --nginx --test-cert\nsudo certbot --nginx # 1 &gt; 1 then 1 &gt; 2\nsudo certbot renew --dry-run</code></pre>\n\n    <h2 id=\"nodejs\">\n      NodeJS\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>sudo apt-get update\nsudo apt install nodejs\nsudo apt install npm \nsudo apt install yarn\nsudo npm i -g pm2\n\n---\n\nnode index.js\nsudo ufw allow 3000\n\n---\npm2 start index.js\n</code></pre>\n<pre class=\"line-numbers  language-html\"><code># Redirect Subdomain to IP Only From DNS \n&gt; sudo nano  /etc/nginx/sites-available/default\n\nserver {\n    server_name piyush.devshakti.tech;\n    location / {\n        proxy_set_header Host $host;\n        proxy_pass http://127.0.0.1:3000;\n        proxy_redirect off;\n    }\n}</code></pre>\n\n  <p>\n    https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/\n  </p>",
+            "content_html": "\n  <p>\n    1. Access vie SSH<br>2. Create Non-Root User<br>3. D.N.S Routing<br>4.&nbsp;Setup Nginx &amp; Config &amp; Routing<br>5. Setup Node for Sub-Domain &amp; Domain for Static Website&nbsp;<br>6. Certbot Encryption<br>\n  </p>\n<hr class=\"separator separator--long-line\" />\n\n    <h2 id=\"create-dropletandnbsp\">\n      Create Droplet&nbsp;\n    </h2>\n\n  <ul>\n    <li><b>Select Region Closer To Your</b></li><li><b>Select SSH</b><br></li>\n  </ul>\n\n    <h2 id=\"access-via-ssh\">\n      Access via SSH\n    </h2>\n<pre class=\"line-numbers  language-html\"><code># Local system\nssh-keygen -t rsa\n: Don't overwrite if already exist\n# Copy and Paste the Default key into DO_Droplet\ncat ~/.ssh/id_rsa.pub\n\n\n# If used another file\nchmod 600 &lt;private&gt;\nssh-add &lt;private&gt;</code></pre>\n\n    <h2 id=\"create-non-root-user\">\n      Create Non-Root User\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>adduser piyush\nusermod -aG sudo piyush\nsudo su - piyush\nsu piyush\nufw allow OpenSSH\nufw enable\n</code></pre>\n\n    <h2 id=\"ssh-userandnbsp\">\n      SSH User&nbsp;\n    </h2>\n<pre class=\"line-numbers  language-html\"><code># Local Machine    \nssh-keygen\neval `ssh-agent -s`\nssh-add ~/.ssh/digitalOcean\n\n# Server\nsu - user\nmkdir ~/.ssh\nchmod 700 ~/.ssh\nnano ~/.ssh/authorized_keys # paste SSh from \nchmod 700 ~/.ssh/authorized_keys\n\n# Local Machine\neval `ssh-agent -s`\nssh-add ~/.ssh/digitalOcean    \nssh user@&lt;IP&gt;\n</code></pre>\n\n    <h2 id=\"nginx-andamp-firewall\">\n      Nginx &amp; Firewall\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>sudo apt-get update\nsudo apt install nginx\n\nsudo ufw allow http https\nsudo ufw allow 'Nginx Full'\nsudo ufw delete allow 'Nginx HTTP'\n\ncd /var/www/html\nsudo nano index.html\n\n# Configs\ncd /etc/nginx/sites-available\nsudo nano default\n\n# test nginx\nsudo nginx -t\n\nsudo systemctl restart nginx.service || service nginx restart\nsystemctl status nginx\n\nsudo systemctl enable nginx\n\n# Nginx Setup for domain</code></pre>\n\n    <h2 id=\"domainandnbsp\">\n      Domain&nbsp;\n    </h2>\n\n  <ul>\n    <li><b>Name Server</b> : migrate Original Domain handeling to DO_domain_handeling</li><li><b>RECORD : </b>By A domain to IP , A www to IP</li>\n  </ul>\n<pre class=\"line-numbers  language-html\"><code>nginx_config : /etc/nginx/sites-enable/default ;\n\troot /var/www/devshakti.tech/html ;\n\tserver_name devshakti.tech devshakti.tech ;\n\tindex index.html\n\tinclude /etc/nginx/conf.d/*.conf ;\n\tinclude /etc/nginx/sites-enabled/* ;</code></pre>\n<pre class=\"line-numbers  language-html\"><code>sudo mkdir -p /var/www/devshakti.tech/html\nsudo chown -R $USER:$USER /var/www/devshakti.tech/html\nsudo chown -R 755 /var/www/devshakti.tech\ntouch /var/www/devshakti.tech/html/index.html\n\nsudo ln -s /etc/nginx/sites-enabled/devshakti.tech /etc/nginx/sites-enabled/\nsudo nginx -s reload\n</code></pre>\n\n    <h2 id=\"ssl-lets-encrypt\">\n      SSL : Lets Encrypt\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>sudo snap install core; sudo snap refresh core\nsudo snap install --classic certbot\nsudo ln -s /snap/bin/certbot /usr/bin/certbot\nsudo certbot --version\n\n# Repeat For every Domain and Subdomain\n  \nsudo certbot --nginx # 1 &gt; 1 then 1 &gt; 2\nsudo certbot renew --dry-run</code></pre>\n\n    <h2 id=\"proxy-redirect\">\n      Proxy / Redirect\n    </h2>\n<pre class=\"line-numbers  language-html\"><code># Redirect Subdomain to IP Only From DNS \n&gt; sudo nano  /etc/nginx/sites-available/default\n\nserver {\n    server_name piyush.devshakti.tech;\n    location / {\n        proxy_set_header Host $host;\n        proxy_pass http://127.0.0.1:3000;\n        proxy_redirect off;\n    }\n}</code></pre>\n\n    <h2 id=\"nodejs\">\n      NodeJS\n    </h2>\n<pre class=\"line-numbers  language-html\"><code>sudo apt-get update\nsudo apt install nodejs\nsudo apt install npm \nsudo apt install yarn\nsudo npm i -g pm2\n\n---\n\nnode index.js\nsudo ufw allow 3000\n\n---\npm2 start index.js\n</code></pre>\n\n    <h2 id=\"github-deploy\">\n      Github Deploy\n    </h2>\n<pre class=\"line-numbers  language-html\"><code># .gitignore should contain /dist dir\nnpm run build\ncd dist/\ngit init\ngit add -A\ngit commit -m \"Deployment\"\ngit push -f git@github.com:&lt;USER&gt;/&lt;REPO&gt;.git master:build</code></pre>\n\n  <p>\n    https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/\n  </p>",
             "author": {
                 "name": "Piyush"
             },
             "tags": [
             ],
             "date_published": "2024-01-01T12:41:21+05:30",
-            "date_modified": "2024-01-02T15:34:57+05:30"
+            "date_modified": "2024-01-05T12:54:41+05:30"
         },
         {
-            "id": "https://seashell-app-otzyy.ondigitalocean.app/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
-            "url": "https://seashell-app-otzyy.ondigitalocean.app/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
+            "id": "https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
+            "url": "https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html",
             "title": "11 Fish Shell Features That Make it More Awesome Than Bash",
             "summary": "Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.",
             "content_html": "\n  <p>\n    Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.\n  </p>\n\n  <p>\n    I am not exaggerating. Fish indeed is an overlooked shell that could be a great fit for beginners and advanced FOSSers alike.\n  </p>\n\n  <p>\n    Fish provides a range of features that makes it an attractive choice. From syntax highlight to abbreviation (my favorite), there are numerous novelties here.\n  </p>\n\n  <p>\n    Let me share some of my favorite Fish shell features with you.\n  </p>\n\n    <h2 id=\"1-syntax-highlighting\">\n      1. Syntax highlighting\n    </h2>\n\n  <ul>\n    <li>It is better to spot errors before they get executed. This saves a lot of time, energy and frustration.<br></li><li>Most modern code editors have the syntax highlighting built-in. Fish has this functionality built into the shell itself and it works on Linux commands.<br></li><li>Incorrect commands? You see it highlighted in red. The same goes for arguments and options that do not match with the context.<br></li>\n  </ul>\n\n  <p>\n    <br><br>\n  </p>",
-            "image": "https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg",
+            "image": "https://devshakti.tech/media/posts/3/matric.jpg",
             "author": {
                 "name": "Piyush"
             },
@@ -41,12 +68,12 @@
             "date_modified": "2023-12-28T12:51:26+05:30"
         },
         {
-            "id": "https://seashell-app-otzyy.ondigitalocean.app/social-media-template-using-html-css-javascript.html",
-            "url": "https://seashell-app-otzyy.ondigitalocean.app/social-media-template-using-html-css-javascript.html",
+            "id": "https://devshakti.tech/social-media-template-using-html-css-javascript.html",
+            "url": "https://devshakti.tech/social-media-template-using-html-css-javascript.html",
             "title": "Social Media Template using html, css, javascript",
             "summary": "Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this&hellip;",
             "content_html": "\n  <p>\n    Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this article then please share this article with your friends and colleagues. If you have any questions or suggestions regarding this article then please comment down below.\n  </p>\n<pre class=\"line-numbers  language-html\"><code>echo \"Hello\"</code></pre>\n\n  <p>\n    Source Code : https://freecodez.com/post/ptzt236\n  </p>",
-            "image": "https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg",
+            "image": "https://devshakti.tech/media/posts/2/css.jpg",
             "author": {
                 "name": "Piyush"
             },
@@ -57,12 +84,12 @@
             "date_modified": "2023-12-28T12:35:08+05:30"
         },
         {
-            "id": "https://seashell-app-otzyy.ondigitalocean.app/learn-html.html",
-            "url": "https://seashell-app-otzyy.ondigitalocean.app/learn-html.html",
+            "id": "https://devshakti.tech/learn-html.html",
+            "url": "https://devshakti.tech/learn-html.html",
             "title": "Learn HTML",
             "summary": "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web&hellip;",
             "content_html": "\n  <p>\n    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.\n  </p>\n\n  <p>\n    . It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript\n  </p>\n\n  <ul>\n    <li>DIV</li><li>A</li><li>HTML</li><li>BODY</li><li>HEAD</li>\n  </ul>\n\n    <figure class=\"blockquote\">\n      <blockquote>No Hypor Be Hyper</blockquote>\n      <figcaption>krista</figcaption>\n    </figure>\n\n  <p>\n    \n  </p>",
-            "image": "https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg",
+            "image": "https://devshakti.tech/media/posts/1/htmll-2.jpg",
             "author": {
                 "name": "Piyush"
             },

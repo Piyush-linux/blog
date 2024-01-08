@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Strapi - devshakti</title><meta name="description" content="# Local Setup Strapi run dev Setup postgres-DB on System- DB Setup /config/database.js ```js module.exports = ({ env }) =&gt;&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://devshakti.tech/strapi.html"><link rel="alternate" type="application/atom+xml" href="https://devshakti.tech/feed.xml"><link rel="alternate" type="application/json" href="https://devshakti.tech/feed.json"><meta property="og:title" content="Strapi"><meta property="og:image" content="https://devshakti.tech/media/website/Devshakti.png"><meta property="og:image:width" content="496"><meta property="og:image:height" content="221"><meta property="og:site_name" content="devshakti"><meta property="og:description" content="# Local Setup Strapi run dev Setup postgres-DB on System- DB Setup /config/database.js ```js module.exports = ({ env }) =&gt;&hellip;"><meta property="og:url" content="https://devshakti.tech/strapi.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://devshakti.tech/assets/css/style.css?v=e25e38c05f127cf66cf75497482ca57b"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://devshakti.tech/strapi.html"},"headline":"Strapi","datePublished":"2024-01-05T12:09","dateModified":"2024-01-05T12:56","image":{"@type":"ImageObject","url":"https://devshakti.tech/media/website/Devshakti.png","height":221,"width":496},"description":"# Local Setup Strapi run dev Setup postgres-DB on System- DB Setup /config/database.js ```js module.exports = ({ env }) =&gt;&hellip;","author":{"@type":"Person","name":"Piyush","url":"https://devshakti.tech/authors/dev/"},"publisher":{"@type":"Organization","name":"Piyush","logo":{"@type":"ImageObject","url":"https://devshakti.tech/media/website/Devshakti.png","height":221,"width":496}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body><header class="header" id="js-header"><a href="https://devshakti.tech/" class="logo"><img src="https://devshakti.tech/media/website/Devshakti.png" alt="devshakti" width="496" height="221"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://devshakti.tech/" title="Devshakti" target="_self" rel="/">Home</a></li><li><a href="https://devshakti.tech/tags/" target="_self">Tags</a></li><li><a href="https://devshakti.tech/contact-us.html" title="contact" target="_self">Contact</a></li></ul></nav><div class="search"><div class="search__overlay js-search-overlay"></div><button class="search__btn js-search-btn" aria-label="Search"><svg role="presentation" focusable="false" height="18" width="18"><use xlink:href="https://devshakti.tech/assets/svg/svg-map.svg#search"/></svg></button></div></header><main><div class="wrapper"><article class="post"><header class="post__header"><h1 class="post__title">Strapi</h1><div class="post__meta"><div class="post__author">By <a href="https://devshakti.tech/authors/dev/" class="invert" rel="author" title="Piyush">Piyush</a></div><time datetime="2024-01-05T12:09">January 5, 2024</time></div></header><div class="post__inner"><div class="post__entry"><h2 id="local-setuplessbrgreater"># Local Setup<br></h2><ul><li>Strapi run dev</li><li>Setup postgres-DB on System</li><li>- DB Setup /config/database.js</li></ul><pre class="line-numbers language-javascript"><code>```js
+  module.exports = ({ env }) =&gt; ({
+      connection: {
+        client: 'postgres',
+        connection: {
+          host: env('DATABASE_HOST'),
+          port: env.int('DATABASE_PORT'),
+          database: env('DATABASE_NAME'),
+          user: env('DATABASE_USERNAME'),
+          password: env('DATABASE_PASSWORD'),
+          schema: env('DATABASE_SCHEMA'), // Not required
+          ssl: {
+            rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
+          },
+        },
+        debug: false,
+      },
+    });
+```
+</code></pre><ul><li>Then Develop acc to your need<br></li></ul><h2 id="before-deployment-to-dolessbrgreater">## Before Deployment to DO<br></h2><ul><li>Build and test locally : <code>npm run start</code></li><li>Backup Your Data before Deployment</li><li>Test Connection to DO-DB from Local Strapi App</li></ul><h2 id="db-setup-on-dolessbrgreater"># DB setup on DO<br></h2><ul><li>Create DB cluster</li><li>Select postgres</li><li>Source : My_PC &amp; MY_Droplet</li><li>Get Credentials<br></li></ul><h2 id="save-envlessbrgreater"># Save ENV<br></h2><pre class="line-numbers language-yaml"><code>```env
+HOST=
+PORT=
+APP_KEYS=
+API_TOKEN_SALT=
+ADMIN_JWT_SECRET=
+TRANSFER_TOKEN_SALT=
+
+DATABASE_HOST=
+DATABASE_PORT=
+DATABASE_NAME=
+DATABASE_USERNAME=
+DATABASE_PASSWORD=
+DATABASE_SCHEMA=
+JWT_SECRET=
+```
+</code></pre><h2 id="deployment-to-dolessbrgreaterlessbrgreater"># Deployment to DO<br><br></h2><ol><li>Git clone Strapi Repo # public only for clonning : - <code>npm install</code></li><li>Create ENV file on server : <code>touch .env</code></li><li>Build on Server :</li><li>Connect to DO-DB</li><li>Firewall</li><li>```</li><li>sudo ufw allow 1337 # Allow to test Connection</li><li>sudo allow 25060 # Allow DO-DB</li><li>```&nbsp;</li><li>Power Cycle : Hard Reset in caes of any error</li></ol><h2 id="dnslessbrgreaterlessbrgreater"># DNS<br><br></h2><ul><li>app.domain.com -&gt; IP:80 ( proxy pass to :1337 )&nbsp;</li><li>`<code>sudo ufw deny 1337</code>`</li><li>Edit Server : <code>/etc/nginx/sites-available&nbsp;</code></li></ul><h2 id="pm2">PM2</h2><pre class="line-numbers language-yaml"><code>npm i pm2 -g
+touch strapi.sh
+    | npm start --prefix /home/&lt;USER&gt;/rusa/rusa-strapi
+    | 
+pm2 start pm2.sh
+pm2 restart pm2.sh
+pm2 stop pm2.sh
+</code></pre></div><footer><p class="post__last-updated">This article was updated on January 5, 2024</p><div class="post__tags-share"><aside class="post__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevshakti.tech%2Fstrapi.html" class="js-share facebook" aria-label="Share with Facebook" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://devshakti.tech/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdevshakti.tech%2Fstrapi.html" class="js-share linkedin" aria-label="Share with LinkedIn" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://devshakti.tech/assets/svg/svg-map.svg#linkedin"/></svg> </a><a href="https://api.whatsapp.com/send?text=Strapi https%3A%2F%2Fdevshakti.tech%2Fstrapi.html" class="js-share whatsapp" aria-label="Share with WhatsApp" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://devshakti.tech/assets/svg/svg-map.svg#whatsapp"/></svg></a></aside></div><div class="post__bio bio"><img src="https://devshakti.tech/media/website/avatar.png" loading="lazy" height="560" width="528" class="bio__avatar" alt="Piyush"><div><h3 class="h6 bio__name"><a href="https://devshakti.tech/authors/dev/" class="invert" title="Piyush">Piyush</a></h3><div class="bio__desc"><p>An inspiration Developer from India , ready to spread knowledge across world !</p><p><strong>Connect with me :</strong> <br>email : <a href="mailto:microsoft98piyu@gmail.com">microsoft98piyu@gmail.com</a><br>facebook : <a href="https://facebook.com" target="_blank" rel="noopener">https://facebook.com</a> </p></div></div></div><nav class="post__nav"><div class="post__nav__prev"><a class="post__nav__link" href="https://devshakti.tech/digital-ocean-setup-for-web-server.html" rel="prev">Previous Post<h3 class="h6">Digital Ocean Setup for Web Server</h3></a></div><div class="post__nav__next"><a class="post__nav__link" href="https://devshakti.tech/nuxt-backend.html" rel="prev">Next Post<h3 class="h6">Nuxt backend</h3></a></div></nav></footer></div></article></div></main><footer class="footer"><div class="footer__social"><a href="https://facebook.com" aria-label="Facebook" class="facebook"><svg><use xlink:href="https://devshakti.tech/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://instagram.com" aria-label="Instagram" class="instagram"><svg><use xlink:href="https://devshakti.tech/assets/svg/svg-map.svg#instagram"/></svg></a></div><div class="footer__copyright">Powered by Devshakti</div></footer><script>window.publiiThemeMenuConfig = {    
+      mobileMenuMode: 'sidebar',
+      animationSpeed: 300,
+      submenuWidth: 'auto',
+      doubleClickTime: 500,
+      mobileMenuExpandableSubmenus: true, 
+      relatedContainerForOverlayMenuSelector: '.navbar',
+   };</script><script defer="defer" src="https://devshakti.tech/assets/js/scripts.min.js?v=66112a161d5939d966ce2b20c13988d9"></script><script>var images = document.querySelectorAll('img[loading]');
+
+      for (var i = 0; i < images.length; i++) {
+         if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+         } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+               }, false);
+         }
+      }</script></body></html>

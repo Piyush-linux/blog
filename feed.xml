@@ -1,23 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>devshakti</title>
-    <link href="https://seashell-app-otzyy.ondigitalocean.app/feed.xml" rel="self" />
-    <link href="https://seashell-app-otzyy.ondigitalocean.app" />
-    <updated>2024-01-02T15:34:57+05:30</updated>
+    <link href="https://devshakti.tech/feed.xml" rel="self" />
+    <link href="https://devshakti.tech" />
+    <updated>2024-01-05T13:37:05+05:30</updated>
     <author>
         <name>Piyush</name>
     </author>
-    <id>https://seashell-app-otzyy.ondigitalocean.app</id>
+    <id>https://devshakti.tech</id>
 
+    <entry>
+        <title>Nuxt backend</title>
+        <author>
+            <name>Piyush</name>
+        </author>
+        <link href="https://devshakti.tech/nuxt-backend.html"/>
+        <id>https://devshakti.tech/nuxt-backend.html</id>
+
+        <updated>2024-01-05T13:37:05+05:30</updated>
+            <summary></summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Strapi</title>
+        <author>
+            <name>Piyush</name>
+        </author>
+        <link href="https://devshakti.tech/strapi.html"/>
+        <id>https://devshakti.tech/strapi.html</id>
+
+        <updated>2024-01-05T12:56:18+05:30</updated>
+            <summary>
+                <![CDATA[
+                    # Local Setup Strapi run dev Setup postgres-DB on System- DB Setup /config/database.js ```js module.exports = ({ env }) =&gt;&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h2 id="local-setuplessbrgreater">
+      # Local Setup<br>
+    </h2>
+
+  <ul>
+    <li>Strapi run dev </li><li>Setup postgres-DB on System</li><li>- DB Setup /config/database.js</li>
+  </ul>
+<pre class="line-numbers  language-javascript"><code>```js
+  module.exports = ({ env }) =&gt; ({
+      connection: {
+        client: 'postgres',
+        connection: {
+          host: env('DATABASE_HOST'),
+          port: env.int('DATABASE_PORT'),
+          database: env('DATABASE_NAME'),
+          user: env('DATABASE_USERNAME'),
+          password: env('DATABASE_PASSWORD'),
+          schema: env('DATABASE_SCHEMA'), // Not required
+          ssl: {
+            rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
+          },
+        },
+        debug: false,
+      },
+    });
+```
+</code></pre>
+
+  <ul>
+    <li>Then Develop acc to your need<br></li>
+  </ul>
+
+    <h2 id="before-deployment-to-dolessbrgreater">
+      ## Before Deployment to DO<br>
+    </h2>
+
+  <ul>
+    <li>Build and test locally : <code>npm run start</code></li><li>Backup Your Data before Deployment</li><li>Test Connection to DO-DB from Local Strapi App</li>
+  </ul>
+
+    <h2 id="db-setup-on-dolessbrgreater">
+      # DB setup on DO<br>
+    </h2>
+
+  <ul>
+    <li>Create DB cluster</li><li>Select postgres</li><li>Source : My_PC &amp; MY_Droplet</li><li>Get Credentials<br></li>
+  </ul>
+
+    <h2 id="save-envlessbrgreater">
+      # Save ENV<br>
+    </h2>
+<pre class="line-numbers  language-yaml"><code>```env
+HOST=
+PORT=
+APP_KEYS=
+API_TOKEN_SALT=
+ADMIN_JWT_SECRET=
+TRANSFER_TOKEN_SALT=
+
+DATABASE_HOST=
+DATABASE_PORT=
+DATABASE_NAME=
+DATABASE_USERNAME=
+DATABASE_PASSWORD=
+DATABASE_SCHEMA=
+JWT_SECRET=
+```
+</code></pre>
+
+    <h2 id="deployment-to-dolessbrgreaterlessbrgreater">
+      # Deployment to DO<br><br>
+    </h2>
+
+  <ol>
+    <li>Git clone Strapi Repo # public only for clonning : - <code>npm install</code></li><li>Create ENV file on server : <code>touch .env</code></li><li>Build on Server : </li><li>Connect to DO-DB </li><li>Firewall</li><li>```</li><li>sudo ufw allow 1337 # Allow to test Connection</li><li>sudo allow 25060 # Allow DO-DB</li><li>```&nbsp;</li><li>Power Cycle : Hard Reset in caes of any error</li>
+  </ol>
+
+    <h2 id="dnslessbrgreaterlessbrgreater">
+      # DNS<br><br>
+    </h2>
+
+  <ul>
+    <li>app.domain.com -&gt; IP:80 ( proxy pass to :1337 )&nbsp;</li><li>`<code>sudo ufw deny 1337</code>`</li><li>Edit Server : <code>/etc/nginx/sites-available&nbsp;</code></li>
+  </ul>
+
+    <h2 id="pm2">
+      PM2
+    </h2>
+<pre class="line-numbers  language-yaml"><code>npm i pm2 -g
+touch strapi.sh
+    | npm start --prefix /home/&lt;USER&gt;/rusa/rusa-strapi
+    | 
+pm2 start pm2.sh
+pm2 restart pm2.sh
+pm2 stop pm2.sh
+</code></pre>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Digital Ocean Setup for Web Server</title>
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html"/>
-        <id>https://seashell-app-otzyy.ondigitalocean.app/digital-ocean-setup-for-web-server.html</id>
+        <link href="https://devshakti.tech/digital-ocean-setup-for-web-server.html"/>
+        <id>https://devshakti.tech/digital-ocean-setup-for-web-server.html</id>
 
-        <updated>2024-01-02T15:34:57+05:30</updated>
+        <updated>2024-01-05T12:54:41+05:30</updated>
             <summary>
                 <![CDATA[
                     1. Access vie SSH 2. Create Non-Root User 3. D.N.S Routing 4.&nbsp;Setup Nginx &amp; Config &amp; Routing 5. Setup Node&hellip;
@@ -143,9 +278,24 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --version
 
 # Repeat For every Domain and Subdomain
-sudo certbot --nginx --test-cert
+  
 sudo certbot --nginx # 1 &gt; 1 then 1 &gt; 2
 sudo certbot renew --dry-run</code></pre>
+
+    <h2 id="proxy-redirect">
+      Proxy / Redirect
+    </h2>
+<pre class="line-numbers  language-html"><code># Redirect Subdomain to IP Only From DNS 
+&gt; sudo nano  /etc/nginx/sites-available/default
+
+server {
+    server_name piyush.devshakti.tech;
+    location / {
+        proxy_set_header Host $host;
+        proxy_pass http://127.0.0.1:3000;
+        proxy_redirect off;
+    }
+}</code></pre>
 
     <h2 id="nodejs">
       NodeJS
@@ -164,17 +314,17 @@ sudo ufw allow 3000
 ---
 pm2 start index.js
 </code></pre>
-<pre class="line-numbers  language-html"><code># Redirect Subdomain to IP Only From DNS 
-&gt; sudo nano  /etc/nginx/sites-available/default
 
-server {
-    server_name piyush.devshakti.tech;
-    location / {
-        proxy_set_header Host $host;
-        proxy_pass http://127.0.0.1:3000;
-        proxy_redirect off;
-    }
-}</code></pre>
+    <h2 id="github-deploy">
+      Github Deploy
+    </h2>
+<pre class="line-numbers  language-html"><code># .gitignore should contain /dist dir
+npm run build
+cd dist/
+git init
+git add -A
+git commit -m "Deployment"
+git push -f git@github.com:&lt;USER&gt;/&lt;REPO&gt;.git master:build</code></pre>
 
   <p>
     https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/
@@ -187,21 +337,21 @@ server {
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://seashell-app-otzyy.ondigitalocean.app/11-fish-shell-features-that-make-it-more-awesome-than-bash.html"/>
-        <id>https://seashell-app-otzyy.ondigitalocean.app/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</id>
-        <media:content url="https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg" medium="image" />
+        <link href="https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html"/>
+        <id>https://devshakti.tech/11-fish-shell-features-that-make-it-more-awesome-than-bash.html</id>
+        <media:content url="https://devshakti.tech/media/posts/3/matric.jpg" medium="image" />
             <category term="linux"/>
 
         <updated>2023-12-28T12:51:26+05:30</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg" alt="matrix" />
+                        <img src="https://devshakti.tech/media/posts/3/matric.jpg" alt="matrix" />
                     Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/3/matric.jpg" class="type:primaryImage" alt="matrix" /></p>
+                    <p><img src="https://devshakti.tech/media/posts/3/matric.jpg" class="type:primaryImage" alt="matrix" /></p>
                 
   <p>
     Bash the most common shell. Zsh is the most popular one among developers. But Fish is the most underrated one.
@@ -238,21 +388,21 @@ server {
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://seashell-app-otzyy.ondigitalocean.app/social-media-template-using-html-css-javascript.html"/>
-        <id>https://seashell-app-otzyy.ondigitalocean.app/social-media-template-using-html-css-javascript.html</id>
-        <media:content url="https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg" medium="image" />
+        <link href="https://devshakti.tech/social-media-template-using-html-css-javascript.html"/>
+        <id>https://devshakti.tech/social-media-template-using-html-css-javascript.html</id>
+        <media:content url="https://devshakti.tech/media/posts/2/css.jpg" medium="image" />
             <category term="Web"/>
 
         <updated>2023-12-28T12:35:08+05:30</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg" alt="css" />
+                        <img src="https://devshakti.tech/media/posts/2/css.jpg" alt="css" />
                     Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/2/css.jpg" class="type:primaryImage" alt="css" /></p>
+                    <p><img src="https://devshakti.tech/media/posts/2/css.jpg" class="type:primaryImage" alt="css" /></p>
                 
   <p>
     Hey there, You are most welcome to this article. I hope you will enjoy this article. If you like this article then please share this article with your friends and colleagues. If you have any questions or suggestions regarding this article then please comment down below.
@@ -270,21 +420,21 @@ server {
         <author>
             <name>Piyush</name>
         </author>
-        <link href="https://seashell-app-otzyy.ondigitalocean.app/learn-html.html"/>
-        <id>https://seashell-app-otzyy.ondigitalocean.app/learn-html.html</id>
-        <media:content url="https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg" medium="image" />
+        <link href="https://devshakti.tech/learn-html.html"/>
+        <id>https://devshakti.tech/learn-html.html</id>
+        <media:content url="https://devshakti.tech/media/posts/1/htmll-2.jpg" medium="image" />
             <category term="Web"/>
 
         <updated>2023-12-28T12:18:45+05:30</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg" alt="html code" />
+                        <img src="https://devshakti.tech/media/posts/1/htmll-2.jpg" alt="html code" />
                     The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://seashell-app-otzyy.ondigitalocean.app/media/posts/1/htmll-2.jpg" class="type:primaryImage" alt="html code" /></p>
+                    <p><img src="https://devshakti.tech/media/posts/1/htmll-2.jpg" class="type:primaryImage" alt="html code" /></p>
                 
   <p>
     The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
